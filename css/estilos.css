@@ -92,7 +92,9 @@ header .contenedor {
 /*----------------------------manin----------------------------------*/
 
 main .logo .max-titulo {
-
+    margin: auto;
+   text-align: center;
+   color: radial-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.3));
 }
 
 main .logo {
@@ -106,7 +108,7 @@ main .logo {
 main .contenedor {
     margin: auto;
     width: 100%;
-    padding:0 15px 0;
+    padding:0 10px 0;
     position: absolute;
     top: 0;
     left: 0;
