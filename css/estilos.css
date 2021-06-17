@@ -36,7 +36,6 @@ img {
     width: 100%;
     margin: auto;
     max-width: 1300px;
-    overflow: hidden;
 }
 
 
@@ -70,16 +69,18 @@ img {
 #particles-js {
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: relative;
+    overflow: hidden;
 }
 
 /*----------------------------header------------------------------------*/
 
 header {
-    color: #fff;
     background: linear-gradient(to bottom,rgba(88, 88, 88, 0.5) 30%, rgba(0,0,0)70%);
+    position: absolute;
     width: 100%;
     height: 50px;
+    top: 0;
 }
 
 header .contenedor {
@@ -89,12 +90,27 @@ header .contenedor {
 
 /*----------------------------manin----------------------------------*/
 
+main .logo .max-titulo {
+
+}
+
+main .logo {
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
 main .contenedor {
     margin: auto;
     width: 100%;
-    padding: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding:0 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .landing {
@@ -123,7 +139,7 @@ main .contenedor {
 
 .landing__form .landing__form-input {
     color: #fff;
-    width: 85%;
+    width: 100%;
     display: block;
     padding: 7px;
     margin-bottom: 25px;
@@ -145,7 +161,7 @@ main .contenedor {
 
 .landing__form .landing__form-button {
     display: block;
-   width: 85%;
+   width: 100%;
    padding: 7px;
    background: rgba(255,255,255,0.8);
    border: 1px solid rgba(255,255,255,0.2);
@@ -230,7 +246,7 @@ main .contenedor {
 
   
 .landing .max-titulo {
-    font-size: 2.7em;
+    font-size: 2.8em;
     margin-bottom: 10px;
     font-weight: 800;
 }
