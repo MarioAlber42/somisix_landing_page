@@ -69,7 +69,7 @@ img {
 #particles-js {
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -110,12 +110,16 @@ main .contenedor {
 }
 
 .landing {
-    position: relative;
     width: 100%;
     margin: auto;
     background: transparent;
-    z-index: 1;
-    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+    z-index: 2;
 }
 
 .landing .max-titulo {
@@ -229,6 +233,9 @@ main .contenedor {
         position: absolute;
         width: 100%;
         bottom: 0;
+        left: 0;
+        z-index: -1;
+        display: none;
     }
 
 
@@ -256,13 +263,13 @@ main .contenedor {
 
   
 .landing .max-titulo {
-    font-size: 2.6em;
+    font-size: 2.8em;
     margin-bottom: 10px;
     font-weight: 800;
 }
 
 .landing .texto {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 15px;
     font-weight: 600;
 }
