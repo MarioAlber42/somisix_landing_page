@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Cuando demos border o padding que queden en este modelo de caja*/
+}
+
+body {
+    background: rgba(0,0,0);
+}
+
+/*estilos para la barra de scroll*/
+body::-webkit-scrollbar {
+width: 7px;
+background: #555;
+}
+
+body::-webkit-scrollbar-thumb {
+background: #111;
+border-radius: 10px;
+}
+/*estilos para la barra de scroll*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+    max-width: 1300px;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 100%;
+       margin: auto;
+   }
+   
+   .container--flex {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+     }
+                               
+   .column {
+       width: 100%;
+   }
+
+
+.max-titulo {
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+}
+
+.texto {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+/*----------------------------header------------------------------------*/
+
+header {
+    color: #fff;
+    background: linear-gradient(to bottom,rgba(88, 88, 88, 0.5) 30%, rgba(0,0,0)70%);
+    width: 100%;
+    height: 50px;
+}
+
+header .contenedor {
+    text-align: center;
+    width: 100%;
+}
+
+/*----------------------------manin----------------------------------*/
+
+main .contenedor {
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landing {
+    width: 100%;
+    margin: auto;
+}
+
+.landing .max-titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.landing .texto {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.landing__form {
+    width: 100%;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.landing__form .landing__form-input {
+    color: #fff;
+    width: 85%;
+    display: block;
+    padding: 7px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+.landing__form .landing__form-input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.landing__form .landing__form-input:focus {
+   outline: none;
+    color:#fff;
+    border-bottom: 1px solid rgba(116, 114, 114, 0.966);
+    transition: all .2s;
+}
+
+.landing__form .landing__form-button {
+    display: block;
+   width: 85%;
+   padding: 7px;
+   background: rgba(255,255,255,0.8);
+   border: 1px solid rgba(255,255,255,0.2);
+   margin-top: 10px;
+   transition: all .2s;
+}
+
+.landing__form .landing__form-button:hover {
+    background: rgba(88, 88, 88, 0.5);
+    color: #fff;
+}
+
+.landing__form-social {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.landing__form-social  .landing__form-social-link {
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.landing__form-social  .landing__form-social-link:hover {
+   color: rgba(255,255,255,0.2);
+}
+
+.landing__img {
+    width: 100%;
+  }
+  
+  .landing__img img {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: all .6s;
+      animation: rotation infinite;
+  }
+
+  @keyframes rotation {
+       
+  }
+
+  /* .landing__img::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(114, 114, 114, 0.2), rgba(0,0,0,0.9));
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: auto;
+    } */
+
+  /* --------------------------resposive--------------------------------- */
+
+  @media screen and (min-width:360px) {
+  
+ }
+ 
+ @media screen and (min-width:480px) {
+ }
+ 
+ @media screen and (min-width:768px) {
+    .column--50 {
+        width: 49%;
+    }
+
+    .landing__img img {
+        width: 300px;
+        height: 300px;
+    }
+ }
+
+ @media screen and (min-width:1024px) {
+
+  
+.landing .max-titulo {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.landing .texto {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.landing__img img {
+    width: 450px;
+    height: 450px;
+}
+
+}
+
+
+
+
+
+ 
+ 
+ 
+ 
