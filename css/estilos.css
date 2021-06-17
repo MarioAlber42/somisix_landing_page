@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgba(34, 33, 33, 0.801);
+    background: rgba(0, 0, 0, 0.801);
 }
 
 /*estilos para la barra de scroll*/
@@ -69,7 +69,7 @@ img {
 #particles-js {
     height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -78,10 +78,8 @@ img {
 header {
     background: transparent;
     background: linear-gradient(to bottom,rgba(184, 177, 177, 0.5) 30%, transparent);
-    position: absolute;
     width: 100%;
     height: 50px;
-    top: 0;
 }
 
 header .contenedor {
@@ -91,13 +89,13 @@ header .contenedor {
 
 /*----------------------------manin----------------------------------*/
 
-main .logo .max-titulo {
+header .logo .max-titulo {
     margin: auto;
    text-align: center;
    color: radial-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.3));
 }
 
-main .logo {
+header .logo {
     color: #fff;
     width: 100%;
     height: 50px;
@@ -108,19 +106,20 @@ main .logo {
 main .contenedor {
     margin: auto;
     width: 100%;
-    padding:0 10px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: table;
+    padding: 0 10px 0;
 }
 
 .landing {
     width: 100%;
     margin: auto;
     background: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+    z-index: 1;
 }
 
 .landing .max-titulo {
@@ -141,10 +140,11 @@ main .contenedor {
 }
 
 .landing__form .landing__form-input {
+    font-size: 15px;
     color: #fff;
     width: 100%;
     display: block;
-    padding: 7px;
+    padding: 9px;
     margin-bottom: 25px;
     border: none;
     border-bottom: 1px solid #fff;
@@ -166,7 +166,7 @@ main .contenedor {
     display: block;
    width: 100%;
    padding: 7px;
-   background: rgba(255,255,255,0.8);
+   background: rgba(255,255,255);
    border: 1px solid rgba(255,255,255,0.2);
    margin-top: 10px;
    transition: all .2s;
@@ -196,10 +196,10 @@ main .contenedor {
 }
 
 .landing__img {
-    background: radial-gradient(rgba(231, 230, 230, 0.637), transparent);
+    background: radial-gradient(rgba(231, 230, 230, 0.9), transparent);
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     clip-path: polygon(50% 0, 0 80%, 100% 80%);
     object-fit: cover;
     transition: all .6s;
@@ -228,6 +228,17 @@ main .contenedor {
       width: 150px;
       height: 150px;
     } */
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+    }
+
+    .wave path {
+        height: 50px;
+    }
 
   /* --------------------------resposive--------------------------------- */
 
